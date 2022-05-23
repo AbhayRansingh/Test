@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts
+Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<package name="default" extends="struts-default">
+		<action name="register"
+			class="bip.action.EmployeeRegisterAction">
+			<result name="Register">EmployeeRegister.jsp</result>
+		</action>
+		<action name="EmployeeDetails"
+			class="bip.action.EmployeeDetailsAction">
+			<result name="REPORT">/EmployeeDetails.jsp</result>
+		</action>
+		<action name="deleterecord"
+			class="bip.action.EmployeeDeleteAction">
+			<result name="Delete">/EmployeeDelete.jsp</result>
+		</action>
+		<action name="updaterecord"
+			class="bip.action.EmployeeUpdateAction">
+			<result name="Update">/UpdateEmployee.jsp</result>
+		</action>
+	</package>
+</struts>
